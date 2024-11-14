@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULARIO PARA ACTIVIDADES DE APOYO COMUNITARIO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form>
+      <h3>FORMULARIO PARA ACTIVIDADES DE APOYO COMUNITARIO</h3>
+
+      <div class="containerInputs">
+        <section>
+          <div class="form-group">
+            <label class="labelHeader" ="inputNombre">Ingrese nombre completo</label>
+            <input
+              id="inputNombre"
+              placeholder="Nombres y Apellidos"
+              type="text"
+              minlength="8"
+              maxlength="22"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="labelHeader" for="inputEmail">Ingrese correo electronico</label>
+            <input
+              id="inputEmail"
+              placeholder="micorreo@gmail.com"
+              type="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="labelHeader" for="inputTelefono">Ingresa numero celular</label>
+            <input id="inputTelefono" type="tel" min="0" max="99" required/>
+          </div>
+        </section>
+        
+        <section>
+          <div class="form-group">
+            <label class="labelHeader">Area de Interes</label>
+
+            <label for="inputEducacion">
+                <input
+                  name="preguntaArea"
+                  type="radio"
+                  id="inputEducacion"
+                  value="educacion"
+                />Educacion
+            </label>
+
+            <label for="inputAnimales">
+                <input
+                  name="preguntaArea"
+                  type="radio"
+                  id="inputAnimales"
+                  value="animales"
+                />Animales de la calle
+            </label>
+
+            <label for="inputMedio">
+                <input
+                  name="preguntaArea"
+                  type="radio"
+                  id="inputMedio"
+                  value="medio"
+                />Medio Ambiente
+             </label>
+
+            <label for="inputSalud">
+                <input
+                  name="preguntaArea"
+                  type="radio"
+                  id="inputSalud"
+                  value="salud"
+                />Salud
+            </label>
+
+            <label for="inputApoyo">
+                <input
+                  name="preguntaArea"
+                  type="radio"
+                  id="inputApoyo"
+                  value="apoyo"
+                />Apoyo Social
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="labelHeader">Dias disponibles</label>
+
+            <label for="inputLunes">
+              <input
+                name="dias"
+                type="checkbox"
+                id="inputLunes"
+                value="lunes"
+              />Lunes
+            </label>
+
+            <label for="inputMartes">
+              <input
+                name="dias"
+                type="checkbox"
+                id="inputMartes"
+                value="martes"
+              />Martes
+            </label>
+
+            <label for="inputMiercoles">
+              <input
+                name="dias"
+                type="checkbox"
+                id="inputMiercoles"
+                value="miercoles"
+              />Miercoles
+            </label>
+
+            <label for="inputJueves">
+                <input
+                  name="dias"
+                  type="checkbox"
+                  id="inputJueves"
+                  value="jueves"
+                />Jueves
+            </label>
+
+            <label for="inputViernes">
+                <input
+                  name="dias"
+                  type="checkbox"
+                  id="inputViernes"
+                  value="viernes"
+                />Viernes
+            </label>
+
+            <label for="inputSabado">
+                <input
+                  name="dias"
+                  type="checkbox"
+                  id="inputSabado"
+                  value="sabado"
+                />Sabado
+            </label>
+
+            <label for="inputDomingo">
+                <input
+                  name="dias"
+                  type="checkbox"
+                  id="inputDomingo"
+                  value="domingo"
+                />Domingo
+            </label>
+          </div>
+        </section>
+        
+        <section>
+          <div class="form-group2">
+            <label class="labelHeader" ="inputExperiencia">Experiencia previa</label>
+            <input
+              id="inputExperiencia"
+              placeholder="Explique brevemente su exprencia como voluntario. (No es obligatorio)"
+              type="text"
+              maxlength="200"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="inputImagen">Subir foto de perfil</label>
+            <input
+              type="file"
+              id="inputImagen"
+              hidden
+              accept=".png, .jpg, .jpeg"
+            />
+          </div>
+          
+          <div class="form-group">
+            <label for="inputAceptar">
+                <input
+                    name="terminos"
+                    type="checkbox"
+                    id="inputAceptar"
+                    value="aceptar"
+                    required
+                />
+                Aceptar terminos y condiciones
+             </label>
+          </div>
+
+          <button type="submit">Registrarse</button> 
+        </section>
+      </div>
+    </form>
+  </body>
+</html>

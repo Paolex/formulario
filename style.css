@@ -1,0 +1,71 @@
+body{
+    background-color: cornflowerblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.containerInputs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+
+label{
+    display: block;
+}
+
+.form-group{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.form-group>input{
+    width: 100%;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.form-group2{
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.form-group2>input{
+    width: 180%;
+    height: 50px;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.labelHeader{
+    font-weight: bold;
+    color: rgb(47, 0, 255);
+}
+
+button{
+    background-color: rgb(123, 253, 134);
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
